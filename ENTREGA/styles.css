@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    max-width: 100%;
+    height: 100%;
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+
+
+
+.titleH1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 30vh
+}
+
+
+
+
+.titleH1 h1{
+    border-bottom: 3px solid #fbff09;
+    cursor: pointer;
+}
+
+.infoDatos{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    color: #fff;
+    padding: 20px;
+}
+.infoDatos span{
+    color: red;
+}
+
+.divForm{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+
+.formulario {
+    padding: 40px;
+    width: 200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+input::placeholder{
+    color: #fff ;
+    font-size: 1.1rem;
+    opacity: 50%;
+    
+}
+
+
+.input{
+    padding: 15px;
+    margin: 6px;
+    width: 15rem;
+    border: none;
+    border-bottom: none;
+    background: #FC466B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #d8d8d8, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+
+.input:focus {
+    outline: none;
+}
+
+
+.btn {
+    color: white;
+    background-color: #2B9348;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+
+.btn:hover{
+    transform: scale(1.1);
+    background-color: #35b95b;
+    color: white;
+}
+
+
+
+.divBienvenida {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+.confirmacion {
+    font-size: 4rem;
+    padding: 5px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+
+
+@keyframes colors {
+    0% {
+        
+    }
+    25%{
+        
+        color: blue;
+    }
+    50%{
+        
+        color: red;
+    }
+    55%{
+        
+        color: white;
+    }
+    60%{
+        
+        color:aqua;
+    }
+    75%{
+        
+        color: violet;
+    }
+    100%{
+        
+        color: green;
+    }
+}
+
+.btnTienda {
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 1.3rem;
+    text-align: center;
+    color: white;
+    background-color:#48c56b;
+}
+
+
+.comprasClass{
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 40px;
+    
+}
+
+.btnComprar {
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+
+
+.tarjeta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.objetos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;  
+    margin: 10px;
+}
+
+.precios{
+    color: green;
+    padding: 10px;
+    text-decoration:overline;
+}
+
+.btnAgregar {
+    border-radius: 20px;
+    padding: 15px;
+    color: white;
+    border: none;
+    background-color: rgb(84, 192, 84);
+    transition: all 0.5s;
+}
+
+.btnAgregar:hover {
+    background-color: rgb(113, 223, 113);
+}
+
+
+.botones {
+    display: flex;
+    justify-content: center;
+}
+
+.mostrar-todo {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 25px;
+    border: none;
+    background-color: rgb(10, 113, 230);
+    color: white;
+    transition: all 0.5s;
+}
+
+.mostrar-todo:hover{
+    background-color: rgb(69, 129, 199);
+}
+
+.borrarLista{
+    padding: 20px;
+    border-radius: 25px;
+    background-color: rgb(211, 79, 70);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    transition: all 0.5s;
+}
+.borrarLista:hover{
+    background-color: rgb(252, 87, 76);
+}
+
+.botonHacerCompra{
+    background-color: rgb(22, 175, 22);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+    transition: all 1s;
+}
+.botonHacerCompra:hover{
+    background-color:rgb(89, 233, 89); ;
+}
+
+
+.lista {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(163, 56, 56);
+    padding: 20px;
+    margin: 10px;
+    border: solid 10px rgb(197, 37, 37);
+    
+}
+
+
+
+.lista p{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2.3rem;
+}
+
+
+.itemCarrito {
+    /* display: flex;
+    justify-content: center; */
+    list-style-type:square;
+    color: white;
+    font-size: 1.2rem;
+ 
+}
+.precio2 {
+    font-size: 1.3rem;
+    color: rgb(95, 255, 95);
+}
+
+.comentarios{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    height: 400px;
+    font-size: 1rem;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid black;
+}
+
+.cuerpo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tituloComentarios{
+    display: flex;
+    justify-content: center;
+}
+
+.nombrePublicacion{
+    padding: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.4rem;
+}
+.comentarioEnv{
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.btnPub{
+    border-radius: 50px;
+    border: 0px;
+    background-color: #0437dd;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+    transition: all 0.7s;
+}
+.btnPub:hover{
+    transform: scale(1.1);
+    background-color: #335eec;
+}
+
