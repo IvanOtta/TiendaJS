@@ -17,15 +17,6 @@ let borrarCarrito = document.querySelector("#borrarLista");
 let nuevo = document.getElementById("contenedor");
 
 
-
-
-
-
-
-
-
-
-
 formulario.addEventListener("submit", validarFormulario);
 
 
@@ -108,10 +99,6 @@ function validarFormulario(e) {
               })
         })
     }
-
-
-
-
 }
 
 
@@ -135,9 +122,6 @@ function mostrarProductos(data) {
     });
 }
 
-
-
-
 class Producto {
     constructor(nombre, precio) {
         this.nombre = nombre;
@@ -147,13 +131,9 @@ class Producto {
         return parseInt(this.precio);
     }
 
-
-
 }
 
 let listaCarrito = [];
-
-
 
 function activarBoton() {
     let botones = document.querySelectorAll(".btnAgregar");
@@ -185,23 +165,9 @@ function activarBoton() {
                 gravity: "bottom",
                 backgroundColor: "rgb(84, 192, 84)"
             }).showToast()
-
-
-
-
-
-
-
-
-
         })
-
     })
 }
-
-
-
-
 
 let botonMostrar = document.querySelector("#mostrar-todo")
 
@@ -221,15 +187,11 @@ function mostrarPrecioTotal() {
         confirmButtonText: 'Ok',
         timer: 1500
     })
-
 }
-
 
 function mostrarTotalTodo() {
     botonMostrar.addEventListener("click", listaTotal)
 }
-
-
 
 function leerLocalStorage() {
     let todoStored = localStorage.getItem('productos')
@@ -241,8 +203,6 @@ function leerLocalStorage() {
     }
 
 }
-
-
 
 borrarCarrito.addEventListener("click", () => {
     Swal.fire({
@@ -260,22 +220,12 @@ borrarCarrito.addEventListener("click", () => {
                 'con exito!',
                 'success'
             )
-
         }
         localStorage.clear();
         lista.innerText = ""
         listaCarrito.innerHTML = [];
     })
 })
-
-
-
-
-
-
-
-
-
 
 document.addEventListener("DOMContentLoaded", function () {
     mostrarProductos(data);
