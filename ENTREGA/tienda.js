@@ -130,10 +130,9 @@ class Producto {
     getPrecio() {
         return parseInt(this.precio);
     }
-
 }
 
-let listaCarrito = [];
+var listaCarrito = [];
 
 function activarBoton() {
     let botones = document.querySelectorAll(".btnAgregar");
@@ -180,7 +179,10 @@ function mostrarPrecioTotal() {
     let precioTotal = 0;
     listaCarrito.forEach((precios) => {
         precioTotal += precios.getPrecio();
+
     })
+    
+    
     Swal.fire({
         title: `Precio total \n$${precioTotal}`,
         icon: 'info',
@@ -223,7 +225,9 @@ borrarCarrito.addEventListener("click", () => {
         }
         localStorage.clear();
         lista.innerText = ""
-        listaCarrito.innerHTML = [];
+        listaCarrito = [];
+        
+        
     })
 })
 
@@ -233,7 +237,6 @@ document.addEventListener("DOMContentLoaded", function () {
     activarMostrarTodo();
 
 });
-
 
 
 
